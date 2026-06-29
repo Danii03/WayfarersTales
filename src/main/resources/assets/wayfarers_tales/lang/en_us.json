@@ -1,6 +1,8 @@
 {
   "block.wayfarers_tales.shorter_grass": "Shorter Grass",
+  "entity.wayfarers_tales.wisp": "Wisp",
   "item.wayfarers_tales.shorter_grass": "Shorter Grass",
   "item.wayfarers_tales.vessel_of_life": "Vessel of Life",
+  "item.wayfarers_tales.wisp_spawn_egg": "Wisp Spawn Egg",
   "itemGroup.wayfarers_tales": "Wayfarer's Tales"
 }

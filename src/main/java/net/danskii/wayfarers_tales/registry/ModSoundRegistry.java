@@ -9,6 +9,8 @@ import net.minecraft.util.Identifier;
 public final class ModSoundRegistry {
     public static final SoundEvent LIFE_VESSEL = register("life_vessel");
     public static final SoundEvent NOPE_SOUND = register("nope_sound");
+    public static final SoundEvent WISP = register("wisp");
+    public static final SoundEvent WISP_HURT = register("wisp_hurt");
 
     private ModSoundRegistry() {
     }

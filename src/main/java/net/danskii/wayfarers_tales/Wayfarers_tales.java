@@ -3,6 +3,7 @@ package net.danskii.wayfarers_tales;
 import net.danskii.wayfarers_tales.player.PlayerLifeContainerEvents;
 import net.danskii.wayfarers_tales.event.ForestFireflyAmbience;
 import net.danskii.wayfarers_tales.registry.ModBlockRegistry;
+import net.danskii.wayfarers_tales.registry.ModEntityRegistry;
 import net.danskii.wayfarers_tales.registry.ModItemGroupRegistry;
 import net.danskii.wayfarers_tales.registry.ModItemRegistry;
 import net.danskii.wayfarers_tales.registry.ModSoundRegistry;
@@ -17,6 +18,7 @@ public class Wayfarers_tales implements ModInitializer {
     public void onInitialize() {
         ModSoundRegistry.initialize();
         ModBlockRegistry.initialize();
+        ModEntityRegistry.initialize();
         ModItemRegistry.initialize();
         ModItemGroupRegistry.initialize();
         ModVegetationFeatures.initialize();

@@ -25,6 +25,8 @@ public final class ModItemGroupRegistry {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.ofVanilla("natural_blocks")))
                 .register(entries -> entries.addAfter(Items.SHORT_GRASS, ModBlockRegistry.SHORTER_GRASS));
+        ItemGroupEvents.modifyEntriesEvent(RegistryKey.of(RegistryKeys.ITEM_GROUP, Identifier.ofVanilla("spawn_eggs")))
+                .register(entries -> entries.add(ModEntityRegistry.WISP_SPAWN_EGG));
 
         Registry.register(Registries.ITEM_GROUP, WAYFARERS_TALES, FabricItemGroup.builder()
                 .displayName(Text.translatable("itemGroup.wayfarers_tales"))

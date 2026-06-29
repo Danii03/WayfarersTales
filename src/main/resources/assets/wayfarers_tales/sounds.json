@@ -8,5 +8,15 @@
     "sounds": [
       "wayfarers_tales:nope_sound"
     ]
+  },
+  "wisp": {
+    "sounds": [
+      "wayfarers_tales:wisp"
+    ]
+  },
+  "wisp_hurt": {
+    "sounds": [
+      "wayfarers_tales:wisp_hurt"
+    ]
   }
 }
