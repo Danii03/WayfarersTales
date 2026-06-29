@@ -4,6 +4,7 @@
   "package": "net.danskii.wayfarers_tales.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "GrassBlockBonemealMixin"
   ],
   "injectors": {
     "defaultRequire": 1
