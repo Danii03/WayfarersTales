@@ -1,0 +1,12 @@
+{
+  "life_vessel": {
+    "sounds": [
+      "wayfarers_tales:life_vessel"
+    ]
+  },
+  "nope_sound": {
+    "sounds": [
+      "wayfarers_tales:nope_sound"
+    ]
+  }
+}

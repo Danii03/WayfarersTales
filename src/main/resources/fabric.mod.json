@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "wayfarers_tales",
+  "version": "${version}",
+  "name": "Wayfarers Tales",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "All-Rights-Reserved",
+  "icon": "assets/wayfarers_tales/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "fabric-datagen": [
+      "net.danskii.wayfarers_tales.client.Wayfarers_talesDataGenerator"
+    ],
+    "client": [
+      "net.danskii.wayfarers_tales.client.Wayfarers_talesClient"
+    ],
+    "main": [
+      "net.danskii.wayfarers_tales.Wayfarers_tales"
+    ]
+  },
+  "mixins": [
+    "wayfarers_tales.mixins.json",
+    {
+      "config": "wayfarers_tales.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
