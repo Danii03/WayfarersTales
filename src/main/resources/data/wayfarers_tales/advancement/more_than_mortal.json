@@ -1,0 +1,27 @@
+{
+  "parent": "wayfarers_tales:root",
+  "criteria": {
+    "consume_vessel_of_life": {
+      "conditions": {
+        "item": {
+          "items": "wayfarers_tales:vessel_of_life"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "background": "minecraft:block/cobbled_deepslate",
+    "description": "Your life force grows stronger with the Vessel of Life.",
+    "icon": {
+      "count": 1,
+      "id": "wayfarers_tales:vessel_of_life"
+    },
+    "title": "More Than Mortal"
+  },
+  "requirements": [
+    [
+      "consume_vessel_of_life"
+    ]
+  ]
+}

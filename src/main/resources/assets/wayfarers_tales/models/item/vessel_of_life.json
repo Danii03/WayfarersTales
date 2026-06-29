@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "wayfarers_tales:item/vessel_of_life"
+    "layer0": "wayfarers_tales:item/life_vessel"
   }
 }

@@ -15,6 +15,11 @@ public final class PlayerLifeContainerService {
         applyHeartContainers(player, state.getHeartContainers(player.getUuid()));
     }
 
+    public static boolean canIncreaseHeartContainers(ServerPlayerEntity player) {
+        LifeContainerState state = LifeContainerState.get(player);
+        return state.canIncreaseHeartContainers(player.getUuid());
+    }
+
     public static boolean tryIncreaseHeartContainers(ServerPlayerEntity player) {
         LifeContainerState state = LifeContainerState.get(player);
 

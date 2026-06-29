@@ -1,0 +1,28 @@
+{
+  "criteria": {
+    "consume_vessel_of_life": {
+      "conditions": {
+        "item": {
+          "items": "wayfarers_tales:vessel_of_life"
+        }
+      },
+      "trigger": "minecraft:consume_item"
+    }
+  },
+  "display": {
+    "announce_to_chat": false,
+    "background": "minecraft:block/cobbled_deepslate",
+    "description": "Your journey has only begun.",
+    "icon": {
+      "count": 1,
+      "id": "wayfarers_tales:vessel_of_life"
+    },
+    "show_toast": false,
+    "title": "Wayfarer's Tales"
+  },
+  "requirements": [
+    [
+      "consume_vessel_of_life"
+    ]
+  ]
+}

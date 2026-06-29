@@ -4,17 +4,33 @@ import java.util.function.Function;
 
 import net.danskii.wayfarers_tales.Wayfarers_tales;
 import net.danskii.wayfarers_tales.item.VesselOfLifeItem;
+import net.minecraft.component.DataComponentTypes;
+import net.minecraft.component.type.ConsumableComponent;
 import net.minecraft.item.Item;
+import net.minecraft.item.consume.UseAction;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
+import net.minecraft.sound.SoundEvents;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.Rarity;
 
 public final class ModItemRegistry {
+    private static final float VESSEL_OF_LIFE_CONSUME_SECONDS = 1.6F;
+
     public static final Item VESSEL_OF_LIFE = register("vessel_of_life", settings ->
-            new VesselOfLifeItem(settings.maxCount(16).rarity(Rarity.RARE))
+            new VesselOfLifeItem(settings
+                    .maxCount(16)
+                    .rarity(Rarity.RARE)
+                    .component(DataComponentTypes.CONSUMABLE, ConsumableComponent.builder()
+                            .consumeSeconds(VESSEL_OF_LIFE_CONSUME_SECONDS)
+                            .useAction(UseAction.EAT)
+                            .sound(SoundEvents.ENTITY_GENERIC_EAT)
+                            .consumeParticles(true)
+                            .build()
+                    )
+            )
     );
 
     private ModItemRegistry() {
